@@ -6,7 +6,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @since From21 1.0
  */
 
 // This theme requires WordPress 5.3 or later.
@@ -22,7 +22,7 @@ if ( ! function_exists( 'twenty_twenty_one_setup' ) ) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @return void
 	 */
@@ -341,7 +341,7 @@ add_action( 'after_setup_theme', 'twenty_twenty_one_setup' );
 /**
  * Registers widget area.
  *
- * @since Twenty Twenty-One 1.0
+ * @since From21 1.0
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  *
@@ -368,7 +368,7 @@ add_action( 'widgets_init', 'twenty_twenty_one_widgets_init' );
  *
  * Priority 0 to make it available to lower priority callbacks.
  *
- * @since Twenty Twenty-One 1.0
+ * @since From21 1.0
  *
  * @global int $content_width Content width.
  *
@@ -385,7 +385,7 @@ add_action( 'after_setup_theme', 'twenty_twenty_one_content_width', 0 );
 /**
  * Enqueues scripts and styles.
  *
- * @since Twenty Twenty-One 1.0
+ * @since From21 1.0
  *
  * @global bool       $is_IE
  * @global WP_Scripts $wp_scripts
@@ -470,7 +470,7 @@ add_action( 'wp_enqueue_scripts', 'twenty_twenty_one_scripts' );
 /**
  * Enqueues block editor script.
  *
- * @since Twenty Twenty-One 1.0
+ * @since From21 1.0
  *
  * @return void
  */
@@ -487,8 +487,8 @@ add_action( 'enqueue_block_editor_assets', 'from21_block_editor_script' );
  * This does not enqueue the script because it is tiny and because it is only for IE11,
  * thus it does not warrant having an entire dedicated blocking script being loaded.
  *
- * @since Twenty Twenty-One 1.0
- * @deprecated Twenty Twenty-One 1.9 Removed from wp_print_footer_scripts action.
+ * @since From21 1.0
+ * @deprecated From21 1.9 Removed from wp_print_footer_scripts action.
  *
  * @link https://git.io/vWdr2
  */
@@ -512,7 +512,7 @@ function twenty_twenty_one_skip_link_focus_fix() {
 /**
  * Enqueues non-latin language styles.
  *
- * @since Twenty Twenty-One 1.0
+ * @since From21 1.0
  *
  * @return void
  */
@@ -558,7 +558,7 @@ new Twenty_Twenty_One_Dark_Mode();
 /**
  * Enqueues scripts for the customizer preview.
  *
- * @since Twenty Twenty-One 1.0
+ * @since From21 1.0
  *
  * @return void
  */
@@ -584,7 +584,7 @@ add_action( 'customize_preview_init', 'from21_customize_preview_init' );
 /**
  * Enqueues scripts for the customizer.
  *
- * @since Twenty Twenty-One 1.0
+ * @since From21 1.0
  *
  * @return void
  */
@@ -603,7 +603,7 @@ add_action( 'customize_controls_enqueue_scripts', 'from21_customize_controls_enq
 /**
  * Calculates classes for the main <html> element.
  *
- * @since Twenty Twenty-One 1.0
+ * @since From21 1.0
  *
  * @return void
  */
@@ -611,7 +611,7 @@ function from21_the_html_classes() {
 	/**
 	 * Filters the classes for the main <html> element.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @param string The list of classes. Default empty string.
 	 */
@@ -625,7 +625,7 @@ function from21_the_html_classes() {
 /**
  * Adds "is-IE" class to body if the user is on Internet Explorer.
  *
- * @since Twenty Twenty-One 1.0
+ * @since From21 1.0
  *
  * @return void
  */

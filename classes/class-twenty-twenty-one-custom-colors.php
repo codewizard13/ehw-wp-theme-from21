@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @since From21 1.0
  */
 
 /**
@@ -15,7 +15,7 @@ class Twenty_Twenty_One_Custom_Colors {
 	/**
 	 * Instantiate the object.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 */
 	public function __construct() {
 
@@ -32,7 +32,7 @@ class Twenty_Twenty_One_Custom_Colors {
 	/**
 	 * Determine the luminance of the given color and then return #fff or #000 so that the text is always readable.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @param string $background_color The background color.
 	 * @return string (hex color)
@@ -48,7 +48,7 @@ class Twenty_Twenty_One_Custom_Colors {
 	 * Both text and link colors needs to be updated.
 	 * The code below needs to be updated, because the colors are no longer theme mods.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @param string|null $context Can be "editor" or null.
 	 * @return string
@@ -79,7 +79,7 @@ class Twenty_Twenty_One_Custom_Colors {
 	/**
 	 * Customizer & frontend custom color variables.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @return void
 	 */
@@ -92,7 +92,7 @@ class Twenty_Twenty_One_Custom_Colors {
 	/**
 	 * Editor custom color variables.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @return void
 	 */
@@ -115,7 +115,7 @@ class Twenty_Twenty_One_Custom_Colors {
 	 *
 	 * @static
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @param string $hex The HEX color.
 	 * @return int Returns a number (0-255).
@@ -143,7 +143,7 @@ class Twenty_Twenty_One_Custom_Colors {
 	/**
 	 * Adds a class to <body> if the background-color is dark.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @param array $classes The existing body classes.
 	 * @return array

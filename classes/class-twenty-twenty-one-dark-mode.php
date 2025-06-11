@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @since From21 1.0
  */
 
 /**
@@ -15,7 +15,7 @@ class Twenty_Twenty_One_Dark_Mode {
 	/**
 	 * Instantiates the object.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 */
 	public function __construct() {
 
@@ -47,7 +47,7 @@ class Twenty_Twenty_One_Dark_Mode {
 	/**
 	 * Enqueues editor custom color variables & scripts.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @return void
 	 */
@@ -84,7 +84,7 @@ class Twenty_Twenty_One_Dark_Mode {
 	/**
 	 * Enqueues scripts and styles.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @return void
 	 */
@@ -102,7 +102,7 @@ class Twenty_Twenty_One_Dark_Mode {
 	/**
 	 * Enqueues scripts for the customizer.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @return void
 	 */
@@ -122,7 +122,7 @@ class Twenty_Twenty_One_Dark_Mode {
 	/**
 	 * Registers customizer options.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
 	 * @return void
@@ -173,7 +173,7 @@ class Twenty_Twenty_One_Dark_Mode {
 
 		$description  = '<p>';
 		$description .= sprintf(
-			/* translators: %s: Twenty Twenty-One support article URL. */
+			/* translators: %s: From21 support article URL. */
 			__( 'Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text. <a href="%s">Learn more about Dark Mode.</a>', 'from21' ),
 			esc_url( __( 'https://wordpress.org/documentation/article/twenty-twenty-one/#dark-mode-support', 'from21' ) )
 		);
@@ -211,7 +211,7 @@ class Twenty_Twenty_One_Dark_Mode {
 	/**
 	 * Calculates classes for the main <html> element.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @param string $classes The classes for <html> element.
 	 * @return string
@@ -233,7 +233,7 @@ class Twenty_Twenty_One_Dark_Mode {
 	/**
 	 * Adds a class to the <body> element in the editor to accommodate dark-mode.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @global WP_Screen $current_screen WordPress current screen object.
 	 *
@@ -265,7 +265,7 @@ class Twenty_Twenty_One_Dark_Mode {
 	/**
 	 * Determines if we want to print the dark-mode switch or not.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @global bool $is_IE
 	 *
@@ -283,7 +283,7 @@ class Twenty_Twenty_One_Dark_Mode {
 	/**
 	 * Adds night/day switch.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @return void
 	 */
@@ -300,7 +300,7 @@ class Twenty_Twenty_One_Dark_Mode {
 	 *
 	 * Inspired from https://codepen.io/aaroniker/pen/KGpXZo (MIT-licensed)
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @param array $attrs The attributes to add to our <button> element.
 	 * @return void
@@ -358,7 +358,7 @@ class Twenty_Twenty_One_Dark_Mode {
 	/**
 	 * Prints the dark-mode switch script.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @return void
 	 */
@@ -371,7 +371,7 @@ class Twenty_Twenty_One_Dark_Mode {
 	/**
 	 * Adds information to the privacy policy.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @return void
 	 */
@@ -379,9 +379,9 @@ class Twenty_Twenty_One_Dark_Mode {
 		if ( ! function_exists( 'wp_add_privacy_policy_content' ) ) {
 			return;
 		}
-		$content = '<p class="privacy-policy-tutorial">' . __( 'Twenty Twenty-One uses LocalStorage when Dark Mode support is enabled.', 'from21' ) . '</p>'
+		$content = '<p class="privacy-policy-tutorial">' . __( 'From21 uses LocalStorage when Dark Mode support is enabled.', 'from21' ) . '</p>'
 				. '<strong class="privacy-policy-tutorial">' . __( 'Suggested text:', 'from21' ) . '</strong> '
 				. __( 'This website uses LocalStorage to save the setting when Dark Mode support is turned on or off.<br> LocalStorage is necessary for the setting to work and is only used when a user clicks on the Dark Mode button.<br> No data is saved in the database or transferred.', 'from21' );
-		wp_add_privacy_policy_content( __( 'Twenty Twenty-One', 'from21' ), wp_kses_post( wpautop( $content, false ) ) );
+		wp_add_privacy_policy_content( __( 'From21', 'from21' ), wp_kses_post( wpautop( $content, false ) ) );
 	}
 }

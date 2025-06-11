@@ -7,21 +7,21 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
+ * @since From21 1.0
  */
 
 if ( function_exists( 'register_block_pattern_category' ) ) {
 	/**
 	 * Register Block Pattern Category.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @return void
 	 */
 	function twenty_twenty_one_register_block_pattern_category() {
 		register_block_pattern_category(
 			'from21',
-			array( 'label' => esc_html__( 'Twenty Twenty-One', 'from21' ) )
+			array( 'label' => esc_html__( 'From21', 'from21' ) )
 		);
 	}
 	add_action( 'init', 'twenty_twenty_one_register_block_pattern_category' );
@@ -34,7 +34,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 	/**
 	 * Register Block Pattern.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since From21 1.0
 	 *
 	 * @return void
 	 */
