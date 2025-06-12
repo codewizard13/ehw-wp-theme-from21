@@ -1,5 +1,5 @@
 === From21 ===
-Contributors: wordpressdotorg
+Contributors: codewizard13
 Requires at least: 5.3
 Tested up to: 6.8
 Requires PHP: 5.6
